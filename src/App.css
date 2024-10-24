@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.sidebar {
+  background-color: black;
+  color: #4a5568; /* Adjust text color */
+  overflow-y: auto;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 0;
+}
+
