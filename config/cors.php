@@ -14,14 +14,14 @@ return [
     | To learn more: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
     |
     */
+    'paths' => ['api/*', 'sanctum/csrf-cookie'],
+    'allowed_methods' => ['*'],
+    'allowed_origins' => ['http://localhost:3000'], // Replace with your actual Vercel URL
+    'allowed_origins_patterns' => [],
+    'allowed_headers' => ['*'],
+    'exposed_headers' => [],
+    'max_age' => 0,
+    'supports_credentials' => true,
+];
 
-        'paths' => ['api/*'],
-        'allowed_methods' => ['*'],
-        'allowed_origins' => ['http://localhost:3000'], // Your React app URL
-        'allowed_headers' => ['*'],
-        'exposed_headers' => [],
-        'max_age' => 0,
-        'supports_credentials' => false,
-    ];
-    
 
