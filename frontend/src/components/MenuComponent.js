@@ -89,7 +89,7 @@ const MenuComponent = () => {
   const [menus, setMenus] = useState([]); // State to store menus
   const [menuItems, setMenuItems] = useState([]); // State to store menu items
   const [parentId, setParentId] = useState(""); // State for parent menu item
-  const [depth, setDepth] = useState(1); // State for depth
+  const [depth] = useState(0);
   const [title, setTitle] = useState(""); // State for title (menu item name)
   const [menuId, setMenuId] = useState(""); // State for selected menu
   const [selectedMenu, setSelectedMenu] = useState(null); // State to store the selected menu object
