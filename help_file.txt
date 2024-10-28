@@ -1,4 +1,4 @@
 1. Firstly, Install Laravel version 10
 2. Now create a database named menu_mng and import database file from root directory (inside DB file folder)
-3. Go to frontend folder and run npm install to install npm_modules folder
+3. Open cmd go to frontend folder and run 'npm install' to install npm_modules folder
 3. Now run npm start and mostly run url: http://localhost:3000
