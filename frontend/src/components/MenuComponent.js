@@ -99,7 +99,7 @@ const MenuComponent = () => {
     const fetchMenus = async () => {
       try {
         const response = await fetch(
-          "http://localhost/menu-management-rightone/public/api/menus"
+          "http://localhost/menu-management/public/api/menus"
         );
         const data = await response.json();
         setMenus(data);
@@ -114,7 +114,7 @@ const MenuComponent = () => {
     const fetchMenuItems = async () => {
       try {
         const response = await fetch(
-          "http://localhost/menu-management-rightone/public/api/submenus"
+          "http://localhost/menu-management/public/api/submenus"
         );
         const data = await response.json();
         setMenuItems(data);
@@ -127,7 +127,7 @@ const MenuComponent = () => {
 
   //   // Handle deleting a menu item
   const handleDeleteItem = (id) => {
-    fetch(`http://localhost/menu-management-rightone/public/api/menu-items/${id}`, {
+    fetch(`http://localhost/menu-management/public/api/menu-items/${id}`, {
       method: "DELETE",
     })
       .then((response) => {
@@ -143,7 +143,7 @@ const MenuComponent = () => {
 
   // Handle editing a menu item
   const handleEditItem = (id, newTitle) => {
-    fetch(`http://localhost/menu-management-rightone/public/api/menu-items/${id}`, {
+    fetch(`http://localhost/menu-management/public/api/menu-items/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
