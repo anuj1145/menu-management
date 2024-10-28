@@ -52,7 +52,7 @@ const StatusBar = () => {
   <div className="flex items-center mr-16 md:hidden">
   <span className="px-1">{networkStatus}</span> 
   <span className="px-1">🔋 {batteryLevel}%</span>
-  <span className="px-1">📶 </span>
+  <span className="px-1">📶 {signalStrength}</span>
 </div>
 
 </div>
